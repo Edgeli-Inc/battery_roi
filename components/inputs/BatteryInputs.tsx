@@ -20,7 +20,7 @@ export default function BatteryInputs({ params, update }: Props) {
         max={11.5}
         step={0.1}
         unit="kW"
-        tooltip="Average kW discharged across VPP events. Drives the VPP payment (uncapped — can export beyond home load). Tesla's example is 3.6 kW."
+        tooltip="Average kW discharged across VPP events. Drives the VPP payment (uncapped — can export beyond home load). No EMT vendor publishes this, so the default uses Tesla's 3.6 kW example."
       />
       <ControlRow
         label="Home peak load (5–9 PM)"
