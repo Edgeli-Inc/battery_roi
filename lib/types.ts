@@ -1,5 +1,19 @@
 export type Scenario = 'vpp' | 'tou' | 'hybrid';
 
+/**
+ * A VPP vendor on the Efficiency Maine (EMT) approved list.
+ * Fields are `null` when the vendor publishes no value — null fields are
+ * excluded from the fleet-wide average (see VPP_VENDOR_AVERAGES).
+ */
+export interface VppVendor {
+  name: string;
+  passThrough: number | null; // $/kW-yr passed through to the homeowner
+  events: number | null; // dispatch events per year
+  avgDischarge: number | null; // kW dispatched per event
+  source: string; // URL the terms were read from
+  note?: string; // how the figures were derived / caveats
+}
+
 export interface InputParams {
   // Cost
   installedCost: number; // dollars

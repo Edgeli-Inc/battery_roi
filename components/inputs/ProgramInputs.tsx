@@ -20,7 +20,7 @@ export default function ProgramInputs({ params, update }: Props) {
         max={60}
         step={5}
         unit="events"
-        tooltip="EMT may call up to 60 events/year (Apr 1–Mar 31); ~40 is typical. Each is a 3-hr weekday dispatch within 5–9 PM."
+        tooltip="Default is the average across EMT-listed vendors that publish an event count. FranklinWH states ≥2/month and ≤60/yr (we model 40); Tesla publishes no count and is excluded. Each event is a 3-hr weekday dispatch within 5–9 PM."
       />
       <ControlRow
         label="Tesla pass-through rate"
@@ -31,7 +31,7 @@ export default function ProgramInputs({ params, update }: Props) {
         step={10}
         prefix="$"
         unit="/kW"
-        tooltip="Tesla passes through $160/kW-yr (80% of EMT's $200/kW). Fixed for the 10-year program term."
+        tooltip="Default is the average pass-through across EMT-listed vendors with published terms: Tesla $160/kW and FranklinWH ≥$160/kW (it retains ≤20% of EMT's $200/kW). Vendors without published terms are excluded. Fixed for the 10-year program term."
       />
       <ControlRow
         label="Weekdays per year"
