@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import BatteryInputs from '@/components/inputs/BatteryInputs';
 import CostInputs from '@/components/inputs/CostInputs';
+import HomeInputs from '@/components/inputs/HomeInputs';
 import ProgramInputs from '@/components/inputs/ProgramInputs';
 import RateInputs from '@/components/inputs/RateInputs';
 import Disclaimers from '@/components/layout/Disclaimers';
@@ -13,13 +14,28 @@ import PaybackBar from '@/components/results/PaybackBar';
 import YearByYearTable from '@/components/results/YearByYearTable';
 import { calcRoi, calcYear1Breakdown } from '@/lib/calculations';
 import { DEFAULTS } from '@/lib/constants';
+import { lookupHomePeakLoad } from '@/lib/loadProfile';
 import type { InputParams } from '@/lib/types';
+
+const HOME_FIELDS = ['homeType', 'yearBuilt', 'sqft', 'heatingFuel'] as const;
 
 export default function Home() {
   const [params, setParams] = useState<InputParams>(DEFAULTS);
 
   const update = (patch: Partial<InputParams>) =>
-    setParams((p) => ({ ...p, ...patch }));
+    setParams((p) => {
+      const next = { ...p, ...patch };
+      // homePeakLoad is derived — re-resolve it whenever a home field changes.
+      if (HOME_FIELDS.some((f) => f in patch)) {
+        next.homePeakLoad = lookupHomePeakLoad(
+          next.homeType,
+          next.yearBuilt,
+          next.sqft,
+          next.heatingFuel,
+        );
+      }
+      return next;
+    });
 
   const summary = useMemo(() => calcRoi(params), [params]);
   const breakdown = useMemo(() => calcYear1Breakdown(params), [params]);
@@ -46,6 +62,7 @@ export default function Home() {
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-[360px_1fr]">
         {/* Left column — inputs */}
         <div className="space-y-4">
+          <HomeInputs params={params} update={update} />
           <CostInputs params={params} update={update} />
           <BatteryInputs params={params} update={update} />
           <ProgramInputs params={params} update={update} />

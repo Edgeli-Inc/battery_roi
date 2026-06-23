@@ -1,0 +1,4550 @@
+{
+"meta": {
+"source": "NREL ResStock 2024 release 2, TMY3 weather (OEDI data lake)",
+"region": "Maine",
+"window": "17:00-21:00 weekday (5-9 PM)",
+"metric": "avg electric power (kW) during the window",
+"method": "per-archetype annual kWh x per-building-type 5-9PM shape factor",
+"minSamples": 10
+},
+"types": [
+"Single-Family Detached",
+"Single-Family Attached",
+"Mobile Home",
+"Multi-Family with 2 - 4 Units",
+"Multi-Family with 5+ Units"
+],
+"vintages": [
+"<1940",
+"1940s",
+"1950s",
+"1960s",
+"1970s",
+"1980s",
+"1990s",
+"2000s",
+"2010s"
+],
+"sqftBins": [
+"0-1499",
+"1500-2499",
+"2500-3999",
+"4000+"
+],
+"fuels": [
+"Electricity",
+"Natural Gas",
+"Fuel Oil",
+"Propane",
+"Other Fuel"
+],
+"shapeFactorByType": {
+"Single-Family Detached": 1.3216,
+"Single-Family Attached": 1.359,
+"Mobile Home": 1.3291,
+"Multi-Family with 2 - 4 Units": 1.2591,
+"Multi-Family with 5+ Units": 1.2243
+},
+"table": {
+"Single-Family Detached|<1940|0-1499|Electricity": {
+"kw": 5.671,
+"n": 12,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|<1940|0-1499|Natural Gas": {
+"kw": 0.707,
+"n": 13,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|<1940|0-1499|Fuel Oil": {
+"kw": 0.681,
+"n": 108,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|<1940|0-1499|Propane": {
+"kw": 0.847,
+"n": 19,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|<1940|0-1499|Other Fuel": {
+"kw": 0.745,
+"n": 33,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|<1940|1500-2499|Electricity": {
+"kw": 5.671,
+"n": 12,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|<1940|1500-2499|Natural Gas": {
+"kw": 0.857,
+"n": 10,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|<1940|1500-2499|Fuel Oil": {
+"kw": 1.068,
+"n": 120,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|<1940|1500-2499|Propane": {
+"kw": 1.168,
+"n": 20,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|<1940|1500-2499|Other Fuel": {
+"kw": 0.665,
+"n": 38,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|<1940|2500-3999|Electricity": {
+"kw": 5.671,
+"n": 12,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|<1940|2500-3999|Natural Gas": {
+"kw": 1.013,
+"n": 32,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|<1940|2500-3999|Fuel Oil": {
+"kw": 1.036,
+"n": 70,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|<1940|2500-3999|Propane": {
+"kw": 1.063,
+"n": 45,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|<1940|2500-3999|Other Fuel": {
+"kw": 0.966,
+"n": 13,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|<1940|4000+|Electricity": {
+"kw": 5.671,
+"n": 12,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|<1940|4000+|Natural Gas": {
+"kw": 1.013,
+"n": 32,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|<1940|4000+|Fuel Oil": {
+"kw": 0.945,
+"n": 20,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|<1940|4000+|Propane": {
+"kw": 1.063,
+"n": 45,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|<1940|4000+|Other Fuel": {
+"kw": 0.755,
+"n": 87,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1940s|0-1499|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1940s|0-1499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1940s|0-1499|Fuel Oil": {
+"kw": 0.801,
+"n": 40,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1940s|0-1499|Propane": {
+"kw": 0.962,
+"n": 239,
+"level": "type+fuel"
+},
+"Single-Family Detached|1940s|0-1499|Other Fuel": {
+"kw": 0.568,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1940s|1500-2499|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1940s|1500-2499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1940s|1500-2499|Fuel Oil": {
+"kw": 1.123,
+"n": 32,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1940s|1500-2499|Propane": {
+"kw": 0.962,
+"n": 239,
+"level": "type+fuel"
+},
+"Single-Family Detached|1940s|1500-2499|Other Fuel": {
+"kw": 0.568,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1940s|2500-3999|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1940s|2500-3999|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1940s|2500-3999|Fuel Oil": {
+"kw": 0.962,
+"n": 74,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1940s|2500-3999|Propane": {
+"kw": 0.962,
+"n": 239,
+"level": "type+fuel"
+},
+"Single-Family Detached|1940s|2500-3999|Other Fuel": {
+"kw": 0.568,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1940s|4000+|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1940s|4000+|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1940s|4000+|Fuel Oil": {
+"kw": 0.962,
+"n": 74,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1940s|4000+|Propane": {
+"kw": 0.962,
+"n": 239,
+"level": "type+fuel"
+},
+"Single-Family Detached|1940s|4000+|Other Fuel": {
+"kw": 0.568,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1950s|0-1499|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1950s|0-1499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1950s|0-1499|Fuel Oil": {
+"kw": 0.698,
+"n": 65,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1950s|0-1499|Propane": {
+"kw": 0.787,
+"n": 10,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1950s|0-1499|Other Fuel": {
+"kw": 0.61,
+"n": 11,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1950s|1500-2499|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1950s|1500-2499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1950s|1500-2499|Fuel Oil": {
+"kw": 1.074,
+"n": 47,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1950s|1500-2499|Propane": {
+"kw": 0.878,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1950s|1500-2499|Other Fuel": {
+"kw": 1.086,
+"n": 11,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1950s|2500-3999|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1950s|2500-3999|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1950s|2500-3999|Fuel Oil": {
+"kw": 1.089,
+"n": 11,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1950s|2500-3999|Propane": {
+"kw": 0.878,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1950s|2500-3999|Other Fuel": {
+"kw": 0.804,
+"n": 26,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1950s|4000+|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1950s|4000+|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1950s|4000+|Fuel Oil": {
+"kw": 0.872,
+"n": 126,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1950s|4000+|Propane": {
+"kw": 0.878,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1950s|4000+|Other Fuel": {
+"kw": 0.804,
+"n": 26,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1960s|0-1499|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1960s|0-1499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1960s|0-1499|Fuel Oil": {
+"kw": 0.727,
+"n": 51,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1960s|0-1499|Propane": {
+"kw": 0.962,
+"n": 239,
+"level": "type+fuel"
+},
+"Single-Family Detached|1960s|0-1499|Other Fuel": {
+"kw": 0.733,
+"n": 22,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1960s|1500-2499|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1960s|1500-2499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1960s|1500-2499|Fuel Oil": {
+"kw": 1.055,
+"n": 49,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1960s|1500-2499|Propane": {
+"kw": 0.962,
+"n": 239,
+"level": "type+fuel"
+},
+"Single-Family Detached|1960s|1500-2499|Other Fuel": {
+"kw": 0.733,
+"n": 22,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1960s|2500-3999|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1960s|2500-3999|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1960s|2500-3999|Fuel Oil": {
+"kw": 1.056,
+"n": 20,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1960s|2500-3999|Propane": {
+"kw": 0.962,
+"n": 239,
+"level": "type+fuel"
+},
+"Single-Family Detached|1960s|2500-3999|Other Fuel": {
+"kw": 0.733,
+"n": 22,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1960s|4000+|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1960s|4000+|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1960s|4000+|Fuel Oil": {
+"kw": 0.9,
+"n": 123,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1960s|4000+|Propane": {
+"kw": 0.962,
+"n": 239,
+"level": "type+fuel"
+},
+"Single-Family Detached|1960s|4000+|Other Fuel": {
+"kw": 0.733,
+"n": 22,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1970s|0-1499|Electricity": {
+"kw": 4.025,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1970s|0-1499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1970s|0-1499|Fuel Oil": {
+"kw": 0.799,
+"n": 72,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1970s|0-1499|Propane": {
+"kw": 0.855,
+"n": 31,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1970s|0-1499|Other Fuel": {
+"kw": 0.626,
+"n": 24,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1970s|1500-2499|Electricity": {
+"kw": 4.025,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1970s|1500-2499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1970s|1500-2499|Fuel Oil": {
+"kw": 1.075,
+"n": 71,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1970s|1500-2499|Propane": {
+"kw": 0.939,
+"n": 15,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1970s|1500-2499|Other Fuel": {
+"kw": 0.903,
+"n": 24,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1970s|2500-3999|Electricity": {
+"kw": 4.025,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1970s|2500-3999|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1970s|2500-3999|Fuel Oil": {
+"kw": 1.3,
+"n": 30,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1970s|2500-3999|Propane": {
+"kw": 0.855,
+"n": 31,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1970s|2500-3999|Other Fuel": {
+"kw": 0.786,
+"n": 57,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1970s|4000+|Electricity": {
+"kw": 4.025,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1970s|4000+|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1970s|4000+|Fuel Oil": {
+"kw": 1.005,
+"n": 175,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1970s|4000+|Propane": {
+"kw": 0.855,
+"n": 31,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1970s|4000+|Other Fuel": {
+"kw": 0.786,
+"n": 57,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1980s|0-1499|Electricity": {
+"kw": 3.607,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1980s|0-1499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1980s|0-1499|Fuel Oil": {
+"kw": 0.698,
+"n": 50,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1980s|0-1499|Propane": {
+"kw": 0.903,
+"n": 26,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1980s|0-1499|Other Fuel": {
+"kw": 0.841,
+"n": 17,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1980s|1500-2499|Electricity": {
+"kw": 3.607,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1980s|1500-2499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1980s|1500-2499|Fuel Oil": {
+"kw": 0.909,
+"n": 58,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1980s|1500-2499|Propane": {
+"kw": 0.77,
+"n": 10,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1980s|1500-2499|Other Fuel": {
+"kw": 1.014,
+"n": 23,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1980s|2500-3999|Electricity": {
+"kw": 3.607,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1980s|2500-3999|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1980s|2500-3999|Fuel Oil": {
+"kw": 1.214,
+"n": 44,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1980s|2500-3999|Propane": {
+"kw": 0.903,
+"n": 26,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1980s|2500-3999|Other Fuel": {
+"kw": 0.94,
+"n": 17,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1980s|4000+|Electricity": {
+"kw": 3.607,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1980s|4000+|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1980s|4000+|Fuel Oil": {
+"kw": 0.783,
+"n": 10,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1980s|4000+|Propane": {
+"kw": 0.903,
+"n": 26,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1980s|4000+|Other Fuel": {
+"kw": 0.95,
+"n": 59,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1990s|0-1499|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1990s|0-1499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1990s|0-1499|Fuel Oil": {
+"kw": 0.629,
+"n": 33,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1990s|0-1499|Propane": {
+"kw": 0.856,
+"n": 24,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1990s|0-1499|Other Fuel": {
+"kw": 0.542,
+"n": 13,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1990s|1500-2499|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1990s|1500-2499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1990s|1500-2499|Fuel Oil": {
+"kw": 1.073,
+"n": 67,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1990s|1500-2499|Propane": {
+"kw": 0.856,
+"n": 24,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1990s|1500-2499|Other Fuel": {
+"kw": 0.868,
+"n": 17,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1990s|2500-3999|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1990s|2500-3999|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1990s|2500-3999|Fuel Oil": {
+"kw": 1.286,
+"n": 53,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1990s|2500-3999|Propane": {
+"kw": 0.856,
+"n": 24,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1990s|2500-3999|Other Fuel": {
+"kw": 1.126,
+"n": 13,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1990s|4000+|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|1990s|4000+|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|1990s|4000+|Fuel Oil": {
+"kw": 1.171,
+"n": 14,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|1990s|4000+|Propane": {
+"kw": 0.856,
+"n": 24,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|1990s|4000+|Other Fuel": {
+"kw": 0.823,
+"n": 47,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|2000s|0-1499|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|2000s|0-1499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|2000s|0-1499|Fuel Oil": {
+"kw": 0.713,
+"n": 45,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|2000s|0-1499|Propane": {
+"kw": 0.745,
+"n": 14,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|2000s|0-1499|Other Fuel": {
+"kw": 0.342,
+"n": 14,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|2000s|1500-2499|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|2000s|1500-2499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|2000s|1500-2499|Fuel Oil": {
+"kw": 0.892,
+"n": 86,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|2000s|1500-2499|Propane": {
+"kw": 0.948,
+"n": 18,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|2000s|1500-2499|Other Fuel": {
+"kw": 0.861,
+"n": 31,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|2000s|2500-3999|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|2000s|2500-3999|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|2000s|2500-3999|Fuel Oil": {
+"kw": 1.028,
+"n": 37,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|2000s|2500-3999|Propane": {
+"kw": 1.734,
+"n": 11,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|2000s|2500-3999|Other Fuel": {
+"kw": 0.849,
+"n": 56,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|2000s|4000+|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|2000s|4000+|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|2000s|4000+|Fuel Oil": {
+"kw": 0.867,
+"n": 177,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|2000s|4000+|Propane": {
+"kw": 1.098,
+"n": 44,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|2000s|4000+|Other Fuel": {
+"kw": 0.849,
+"n": 56,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|2010s|0-1499|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|2010s|0-1499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|2010s|0-1499|Fuel Oil": {
+"kw": 0.938,
+"n": 21,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|2010s|0-1499|Propane": {
+"kw": 0.97,
+"n": 38,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|2010s|0-1499|Other Fuel": {
+"kw": 1.03,
+"n": 16,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|2010s|1500-2499|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|2010s|1500-2499|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|2010s|1500-2499|Fuel Oil": {
+"kw": 0.828,
+"n": 13,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|2010s|1500-2499|Propane": {
+"kw": 0.902,
+"n": 26,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|2010s|1500-2499|Other Fuel": {
+"kw": 1.03,
+"n": 16,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|2010s|2500-3999|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|2010s|2500-3999|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|2010s|2500-3999|Fuel Oil": {
+"kw": 0.938,
+"n": 21,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|2010s|2500-3999|Propane": {
+"kw": 1.119,
+"n": 12,
+"level": "type+vintage+sqft+fuel"
+},
+"Single-Family Detached|2010s|2500-3999|Other Fuel": {
+"kw": 1.03,
+"n": 16,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|2010s|4000+|Electricity": {
+"kw": 4.269,
+"n": 69,
+"level": "type+fuel"
+},
+"Single-Family Detached|2010s|4000+|Natural Gas": {
+"kw": 1.029,
+"n": 63,
+"level": "type+fuel"
+},
+"Single-Family Detached|2010s|4000+|Fuel Oil": {
+"kw": 0.938,
+"n": 21,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|2010s|4000+|Propane": {
+"kw": 0.97,
+"n": 38,
+"level": "type+vintage+fuel"
+},
+"Single-Family Detached|2010s|4000+|Other Fuel": {
+"kw": 1.03,
+"n": 16,
+"level": "type+vintage+fuel"
+},
+"Single-Family Attached|<1940|0-1499|Electricity": {
+"kw": 1.014,
+"n": 13,
+"level": "type+vintage"
+},
+"Single-Family Attached|<1940|0-1499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|<1940|0-1499|Fuel Oil": {
+"kw": 1.072,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Single-Family Attached|<1940|0-1499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|<1940|0-1499|Other Fuel": {
+"kw": 1.014,
+"n": 13,
+"level": "type+vintage"
+},
+"Single-Family Attached|<1940|1500-2499|Electricity": {
+"kw": 1.014,
+"n": 13,
+"level": "type+vintage"
+},
+"Single-Family Attached|<1940|1500-2499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|<1940|1500-2499|Fuel Oil": {
+"kw": 1.072,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Single-Family Attached|<1940|1500-2499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|<1940|1500-2499|Other Fuel": {
+"kw": 1.014,
+"n": 13,
+"level": "type+vintage"
+},
+"Single-Family Attached|<1940|2500-3999|Electricity": {
+"kw": 1.014,
+"n": 13,
+"level": "type+vintage"
+},
+"Single-Family Attached|<1940|2500-3999|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|<1940|2500-3999|Fuel Oil": {
+"kw": 1.072,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Single-Family Attached|<1940|2500-3999|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|<1940|2500-3999|Other Fuel": {
+"kw": 1.014,
+"n": 13,
+"level": "type+vintage"
+},
+"Single-Family Attached|<1940|4000+|Electricity": {
+"kw": 1.014,
+"n": 13,
+"level": "type+vintage"
+},
+"Single-Family Attached|<1940|4000+|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|<1940|4000+|Fuel Oil": {
+"kw": 1.072,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Single-Family Attached|<1940|4000+|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|<1940|4000+|Other Fuel": {
+"kw": 1.014,
+"n": 13,
+"level": "type+vintage"
+},
+"Single-Family Attached|1940s|0-1499|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1940s|0-1499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1940s|0-1499|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1940s|0-1499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1940s|0-1499|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1940s|1500-2499|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1940s|1500-2499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1940s|1500-2499|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1940s|1500-2499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1940s|1500-2499|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1940s|2500-3999|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1940s|2500-3999|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1940s|2500-3999|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1940s|2500-3999|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1940s|2500-3999|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1940s|4000+|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1940s|4000+|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1940s|4000+|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1940s|4000+|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1940s|4000+|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1950s|0-1499|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1950s|0-1499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1950s|0-1499|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1950s|0-1499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1950s|0-1499|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1950s|1500-2499|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1950s|1500-2499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1950s|1500-2499|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1950s|1500-2499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1950s|1500-2499|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1950s|2500-3999|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1950s|2500-3999|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1950s|2500-3999|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1950s|2500-3999|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1950s|2500-3999|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1950s|4000+|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1950s|4000+|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1950s|4000+|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1950s|4000+|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1950s|4000+|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1960s|0-1499|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1960s|0-1499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1960s|0-1499|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1960s|0-1499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1960s|0-1499|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1960s|1500-2499|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1960s|1500-2499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1960s|1500-2499|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1960s|1500-2499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1960s|1500-2499|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1960s|2500-3999|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1960s|2500-3999|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1960s|2500-3999|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1960s|2500-3999|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1960s|2500-3999|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1960s|4000+|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1960s|4000+|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1960s|4000+|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1960s|4000+|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1960s|4000+|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1970s|0-1499|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1970s|0-1499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1970s|0-1499|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1970s|0-1499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1970s|0-1499|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1970s|1500-2499|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1970s|1500-2499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1970s|1500-2499|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1970s|1500-2499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1970s|1500-2499|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1970s|2500-3999|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1970s|2500-3999|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1970s|2500-3999|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1970s|2500-3999|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1970s|2500-3999|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1970s|4000+|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1970s|4000+|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1970s|4000+|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1970s|4000+|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1970s|4000+|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1980s|0-1499|Electricity": {
+"kw": 1.288,
+"n": 11,
+"level": "type+vintage+sqft"
+},
+"Single-Family Attached|1980s|0-1499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1980s|0-1499|Fuel Oil": {
+"kw": 0.826,
+"n": 12,
+"level": "type+vintage+fuel"
+},
+"Single-Family Attached|1980s|0-1499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1980s|0-1499|Other Fuel": {
+"kw": 1.288,
+"n": 11,
+"level": "type+vintage+sqft"
+},
+"Single-Family Attached|1980s|1500-2499|Electricity": {
+"kw": 1.147,
+"n": 19,
+"level": "type+vintage"
+},
+"Single-Family Attached|1980s|1500-2499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1980s|1500-2499|Fuel Oil": {
+"kw": 0.826,
+"n": 12,
+"level": "type+vintage+fuel"
+},
+"Single-Family Attached|1980s|1500-2499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1980s|1500-2499|Other Fuel": {
+"kw": 1.147,
+"n": 19,
+"level": "type+vintage"
+},
+"Single-Family Attached|1980s|2500-3999|Electricity": {
+"kw": 1.147,
+"n": 19,
+"level": "type+vintage"
+},
+"Single-Family Attached|1980s|2500-3999|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1980s|2500-3999|Fuel Oil": {
+"kw": 0.826,
+"n": 12,
+"level": "type+vintage+fuel"
+},
+"Single-Family Attached|1980s|2500-3999|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1980s|2500-3999|Other Fuel": {
+"kw": 1.147,
+"n": 19,
+"level": "type+vintage"
+},
+"Single-Family Attached|1980s|4000+|Electricity": {
+"kw": 1.147,
+"n": 19,
+"level": "type+vintage"
+},
+"Single-Family Attached|1980s|4000+|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1980s|4000+|Fuel Oil": {
+"kw": 0.826,
+"n": 12,
+"level": "type+vintage+fuel"
+},
+"Single-Family Attached|1980s|4000+|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1980s|4000+|Other Fuel": {
+"kw": 1.147,
+"n": 19,
+"level": "type+vintage"
+},
+"Single-Family Attached|1990s|0-1499|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1990s|0-1499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1990s|0-1499|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1990s|0-1499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1990s|0-1499|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1990s|1500-2499|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1990s|1500-2499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1990s|1500-2499|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1990s|1500-2499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1990s|1500-2499|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1990s|2500-3999|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1990s|2500-3999|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1990s|2500-3999|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1990s|2500-3999|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1990s|2500-3999|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1990s|4000+|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|1990s|4000+|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|1990s|4000+|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|1990s|4000+|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|1990s|4000+|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|2000s|0-1499|Electricity": {
+"kw": 1.051,
+"n": 17,
+"level": "type+vintage"
+},
+"Single-Family Attached|2000s|0-1499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|2000s|0-1499|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|2000s|0-1499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|2000s|0-1499|Other Fuel": {
+"kw": 1.051,
+"n": 17,
+"level": "type+vintage"
+},
+"Single-Family Attached|2000s|1500-2499|Electricity": {
+"kw": 1.119,
+"n": 11,
+"level": "type+vintage+sqft"
+},
+"Single-Family Attached|2000s|1500-2499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|2000s|1500-2499|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|2000s|1500-2499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|2000s|1500-2499|Other Fuel": {
+"kw": 1.119,
+"n": 11,
+"level": "type+vintage+sqft"
+},
+"Single-Family Attached|2000s|2500-3999|Electricity": {
+"kw": 1.051,
+"n": 17,
+"level": "type+vintage"
+},
+"Single-Family Attached|2000s|2500-3999|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|2000s|2500-3999|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|2000s|2500-3999|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|2000s|2500-3999|Other Fuel": {
+"kw": 1.051,
+"n": 17,
+"level": "type+vintage"
+},
+"Single-Family Attached|2000s|4000+|Electricity": {
+"kw": 1.051,
+"n": 17,
+"level": "type+vintage"
+},
+"Single-Family Attached|2000s|4000+|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|2000s|4000+|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|2000s|4000+|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|2000s|4000+|Other Fuel": {
+"kw": 1.051,
+"n": 17,
+"level": "type+vintage"
+},
+"Single-Family Attached|2010s|0-1499|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|2010s|0-1499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|2010s|0-1499|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|2010s|0-1499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|2010s|0-1499|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|2010s|1500-2499|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|2010s|1500-2499|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|2010s|1500-2499|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|2010s|1500-2499|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|2010s|1500-2499|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|2010s|2500-3999|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|2010s|2500-3999|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|2010s|2500-3999|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|2010s|2500-3999|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|2010s|2500-3999|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|2010s|4000+|Electricity": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Single-Family Attached|2010s|4000+|Natural Gas": {
+"kw": 0.845,
+"n": 11,
+"level": "type+fuel"
+},
+"Single-Family Attached|2010s|4000+|Fuel Oil": {
+"kw": 0.958,
+"n": 48,
+"level": "type+fuel"
+},
+"Single-Family Attached|2010s|4000+|Propane": {
+"kw": 0.726,
+"n": 10,
+"level": "type+fuel"
+},
+"Single-Family Attached|2010s|4000+|Other Fuel": {
+"kw": 1.0,
+"n": 72,
+"level": "type"
+},
+"Mobile Home|<1940|0-1499|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|<1940|0-1499|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|<1940|0-1499|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|<1940|0-1499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|<1940|0-1499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|<1940|1500-2499|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|<1940|1500-2499|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|<1940|1500-2499|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|<1940|1500-2499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|<1940|1500-2499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|<1940|2500-3999|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|<1940|2500-3999|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|<1940|2500-3999|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|<1940|2500-3999|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|<1940|2500-3999|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|<1940|4000+|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|<1940|4000+|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|<1940|4000+|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|<1940|4000+|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|<1940|4000+|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1940s|0-1499|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1940s|0-1499|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1940s|0-1499|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|1940s|0-1499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1940s|0-1499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1940s|1500-2499|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1940s|1500-2499|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1940s|1500-2499|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|1940s|1500-2499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1940s|1500-2499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1940s|2500-3999|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1940s|2500-3999|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1940s|2500-3999|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|1940s|2500-3999|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1940s|2500-3999|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1940s|4000+|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1940s|4000+|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1940s|4000+|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|1940s|4000+|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1940s|4000+|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1950s|0-1499|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1950s|0-1499|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1950s|0-1499|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|1950s|0-1499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1950s|0-1499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1950s|1500-2499|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1950s|1500-2499|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1950s|1500-2499|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|1950s|1500-2499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1950s|1500-2499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1950s|2500-3999|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1950s|2500-3999|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1950s|2500-3999|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|1950s|2500-3999|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1950s|2500-3999|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1950s|4000+|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1950s|4000+|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|1950s|4000+|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|1950s|4000+|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1950s|4000+|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1960s|0-1499|Electricity": {
+"kw": 0.953,
+"n": 12,
+"level": "type+vintage+sqft"
+},
+"Mobile Home|1960s|0-1499|Natural Gas": {
+"kw": 0.953,
+"n": 12,
+"level": "type+vintage+sqft"
+},
+"Mobile Home|1960s|0-1499|Fuel Oil": {
+"kw": 1.005,
+"n": 10,
+"level": "type+vintage+sqft+fuel"
+},
+"Mobile Home|1960s|0-1499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1960s|0-1499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1960s|1500-2499|Electricity": {
+"kw": 0.953,
+"n": 12,
+"level": "type+vintage"
+},
+"Mobile Home|1960s|1500-2499|Natural Gas": {
+"kw": 0.953,
+"n": 12,
+"level": "type+vintage"
+},
+"Mobile Home|1960s|1500-2499|Fuel Oil": {
+"kw": 1.005,
+"n": 10,
+"level": "type+vintage+fuel"
+},
+"Mobile Home|1960s|1500-2499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1960s|1500-2499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1960s|2500-3999|Electricity": {
+"kw": 0.953,
+"n": 12,
+"level": "type+vintage"
+},
+"Mobile Home|1960s|2500-3999|Natural Gas": {
+"kw": 0.953,
+"n": 12,
+"level": "type+vintage"
+},
+"Mobile Home|1960s|2500-3999|Fuel Oil": {
+"kw": 1.005,
+"n": 10,
+"level": "type+vintage+fuel"
+},
+"Mobile Home|1960s|2500-3999|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1960s|2500-3999|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1960s|4000+|Electricity": {
+"kw": 0.953,
+"n": 12,
+"level": "type+vintage"
+},
+"Mobile Home|1960s|4000+|Natural Gas": {
+"kw": 0.953,
+"n": 12,
+"level": "type+vintage"
+},
+"Mobile Home|1960s|4000+|Fuel Oil": {
+"kw": 1.005,
+"n": 10,
+"level": "type+vintage+fuel"
+},
+"Mobile Home|1960s|4000+|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1960s|4000+|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1970s|0-1499|Electricity": {
+"kw": 1.09,
+"n": 49,
+"level": "type+vintage+sqft"
+},
+"Mobile Home|1970s|0-1499|Natural Gas": {
+"kw": 1.09,
+"n": 49,
+"level": "type+vintage+sqft"
+},
+"Mobile Home|1970s|0-1499|Fuel Oil": {
+"kw": 1.115,
+"n": 38,
+"level": "type+vintage+sqft+fuel"
+},
+"Mobile Home|1970s|0-1499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1970s|0-1499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1970s|1500-2499|Electricity": {
+"kw": 1.145,
+"n": 52,
+"level": "type+vintage"
+},
+"Mobile Home|1970s|1500-2499|Natural Gas": {
+"kw": 1.145,
+"n": 52,
+"level": "type+vintage"
+},
+"Mobile Home|1970s|1500-2499|Fuel Oil": {
+"kw": 1.184,
+"n": 41,
+"level": "type+vintage+fuel"
+},
+"Mobile Home|1970s|1500-2499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1970s|1500-2499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1970s|2500-3999|Electricity": {
+"kw": 1.145,
+"n": 52,
+"level": "type+vintage"
+},
+"Mobile Home|1970s|2500-3999|Natural Gas": {
+"kw": 1.145,
+"n": 52,
+"level": "type+vintage"
+},
+"Mobile Home|1970s|2500-3999|Fuel Oil": {
+"kw": 1.184,
+"n": 41,
+"level": "type+vintage+fuel"
+},
+"Mobile Home|1970s|2500-3999|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1970s|2500-3999|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1970s|4000+|Electricity": {
+"kw": 1.145,
+"n": 52,
+"level": "type+vintage"
+},
+"Mobile Home|1970s|4000+|Natural Gas": {
+"kw": 1.145,
+"n": 52,
+"level": "type+vintage"
+},
+"Mobile Home|1970s|4000+|Fuel Oil": {
+"kw": 1.184,
+"n": 41,
+"level": "type+vintage+fuel"
+},
+"Mobile Home|1970s|4000+|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1970s|4000+|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1980s|0-1499|Electricity": {
+"kw": 1.082,
+"n": 57,
+"level": "type+vintage+sqft"
+},
+"Mobile Home|1980s|0-1499|Natural Gas": {
+"kw": 1.082,
+"n": 57,
+"level": "type+vintage+sqft"
+},
+"Mobile Home|1980s|0-1499|Fuel Oil": {
+"kw": 1.117,
+"n": 47,
+"level": "type+vintage+sqft+fuel"
+},
+"Mobile Home|1980s|0-1499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1980s|0-1499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1980s|1500-2499|Electricity": {
+"kw": 1.11,
+"n": 66,
+"level": "type+vintage"
+},
+"Mobile Home|1980s|1500-2499|Natural Gas": {
+"kw": 1.11,
+"n": 66,
+"level": "type+vintage"
+},
+"Mobile Home|1980s|1500-2499|Fuel Oil": {
+"kw": 1.131,
+"n": 53,
+"level": "type+vintage+fuel"
+},
+"Mobile Home|1980s|1500-2499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1980s|1500-2499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1980s|2500-3999|Electricity": {
+"kw": 1.11,
+"n": 66,
+"level": "type+vintage"
+},
+"Mobile Home|1980s|2500-3999|Natural Gas": {
+"kw": 1.11,
+"n": 66,
+"level": "type+vintage"
+},
+"Mobile Home|1980s|2500-3999|Fuel Oil": {
+"kw": 1.131,
+"n": 53,
+"level": "type+vintage+fuel"
+},
+"Mobile Home|1980s|2500-3999|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1980s|2500-3999|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1980s|4000+|Electricity": {
+"kw": 1.11,
+"n": 66,
+"level": "type+vintage"
+},
+"Mobile Home|1980s|4000+|Natural Gas": {
+"kw": 1.11,
+"n": 66,
+"level": "type+vintage"
+},
+"Mobile Home|1980s|4000+|Fuel Oil": {
+"kw": 1.131,
+"n": 53,
+"level": "type+vintage+fuel"
+},
+"Mobile Home|1980s|4000+|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1980s|4000+|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1990s|0-1499|Electricity": {
+"kw": 1.151,
+"n": 52,
+"level": "type+vintage+sqft"
+},
+"Mobile Home|1990s|0-1499|Natural Gas": {
+"kw": 1.151,
+"n": 52,
+"level": "type+vintage+sqft"
+},
+"Mobile Home|1990s|0-1499|Fuel Oil": {
+"kw": 1.153,
+"n": 41,
+"level": "type+vintage+sqft+fuel"
+},
+"Mobile Home|1990s|0-1499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1990s|0-1499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1990s|1500-2499|Electricity": {
+"kw": 1.588,
+"n": 16,
+"level": "type+vintage+sqft"
+},
+"Mobile Home|1990s|1500-2499|Natural Gas": {
+"kw": 1.588,
+"n": 16,
+"level": "type+vintage+sqft"
+},
+"Mobile Home|1990s|1500-2499|Fuel Oil": {
+"kw": 1.646,
+"n": 15,
+"level": "type+vintage+sqft+fuel"
+},
+"Mobile Home|1990s|1500-2499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1990s|1500-2499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1990s|2500-3999|Electricity": {
+"kw": 1.254,
+"n": 68,
+"level": "type+vintage"
+},
+"Mobile Home|1990s|2500-3999|Natural Gas": {
+"kw": 1.254,
+"n": 68,
+"level": "type+vintage"
+},
+"Mobile Home|1990s|2500-3999|Fuel Oil": {
+"kw": 1.285,
+"n": 56,
+"level": "type+vintage+fuel"
+},
+"Mobile Home|1990s|2500-3999|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1990s|2500-3999|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|1990s|4000+|Electricity": {
+"kw": 1.254,
+"n": 68,
+"level": "type+vintage"
+},
+"Mobile Home|1990s|4000+|Natural Gas": {
+"kw": 1.254,
+"n": 68,
+"level": "type+vintage"
+},
+"Mobile Home|1990s|4000+|Fuel Oil": {
+"kw": 1.285,
+"n": 56,
+"level": "type+vintage+fuel"
+},
+"Mobile Home|1990s|4000+|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|1990s|4000+|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|2000s|0-1499|Electricity": {
+"kw": 1.048,
+"n": 31,
+"level": "type+vintage+sqft"
+},
+"Mobile Home|2000s|0-1499|Natural Gas": {
+"kw": 1.048,
+"n": 31,
+"level": "type+vintage+sqft"
+},
+"Mobile Home|2000s|0-1499|Fuel Oil": {
+"kw": 1.12,
+"n": 25,
+"level": "type+vintage+sqft+fuel"
+},
+"Mobile Home|2000s|0-1499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|2000s|0-1499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|2000s|1500-2499|Electricity": {
+"kw": 1.307,
+"n": 43,
+"level": "type+vintage"
+},
+"Mobile Home|2000s|1500-2499|Natural Gas": {
+"kw": 1.307,
+"n": 43,
+"level": "type+vintage"
+},
+"Mobile Home|2000s|1500-2499|Fuel Oil": {
+"kw": 1.384,
+"n": 35,
+"level": "type+vintage+fuel"
+},
+"Mobile Home|2000s|1500-2499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|2000s|1500-2499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|2000s|2500-3999|Electricity": {
+"kw": 1.307,
+"n": 43,
+"level": "type+vintage"
+},
+"Mobile Home|2000s|2500-3999|Natural Gas": {
+"kw": 1.307,
+"n": 43,
+"level": "type+vintage"
+},
+"Mobile Home|2000s|2500-3999|Fuel Oil": {
+"kw": 1.384,
+"n": 35,
+"level": "type+vintage+fuel"
+},
+"Mobile Home|2000s|2500-3999|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|2000s|2500-3999|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|2000s|4000+|Electricity": {
+"kw": 1.307,
+"n": 43,
+"level": "type+vintage"
+},
+"Mobile Home|2000s|4000+|Natural Gas": {
+"kw": 1.307,
+"n": 43,
+"level": "type+vintage"
+},
+"Mobile Home|2000s|4000+|Fuel Oil": {
+"kw": 1.384,
+"n": 35,
+"level": "type+vintage+fuel"
+},
+"Mobile Home|2000s|4000+|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|2000s|4000+|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|2010s|0-1499|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|2010s|0-1499|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|2010s|0-1499|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|2010s|0-1499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|2010s|0-1499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|2010s|1500-2499|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|2010s|1500-2499|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|2010s|1500-2499|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|2010s|1500-2499|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|2010s|1500-2499|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|2010s|2500-3999|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|2010s|2500-3999|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|2010s|2500-3999|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|2010s|2500-3999|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|2010s|2500-3999|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Mobile Home|2010s|4000+|Electricity": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|2010s|4000+|Natural Gas": {
+"kw": 1.182,
+"n": 252,
+"level": "type"
+},
+"Mobile Home|2010s|4000+|Fuel Oil": {
+"kw": 1.22,
+"n": 205,
+"level": "type+fuel"
+},
+"Mobile Home|2010s|4000+|Propane": {
+"kw": 0.88,
+"n": 20,
+"level": "type+fuel"
+},
+"Mobile Home|2010s|4000+|Other Fuel": {
+"kw": 0.89,
+"n": 23,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|0-1499|Electricity": {
+"kw": 3.362,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|0-1499|Natural Gas": {
+"kw": 0.698,
+"n": 29,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|0-1499|Fuel Oil": {
+"kw": 0.57,
+"n": 64,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|0-1499|Propane": {
+"kw": 0.651,
+"n": 11,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|0-1499|Other Fuel": {
+"kw": 0.791,
+"n": 115,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 2 - 4 Units|<1940|1500-2499|Electricity": {
+"kw": 3.362,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|1500-2499|Natural Gas": {
+"kw": 0.709,
+"n": 31,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|1500-2499|Fuel Oil": {
+"kw": 0.57,
+"n": 70,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|1500-2499|Propane": {
+"kw": 0.702,
+"n": 12,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|1500-2499|Other Fuel": {
+"kw": 0.884,
+"n": 127,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|<1940|2500-3999|Electricity": {
+"kw": 3.362,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|2500-3999|Natural Gas": {
+"kw": 0.709,
+"n": 31,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|2500-3999|Fuel Oil": {
+"kw": 0.57,
+"n": 70,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|2500-3999|Propane": {
+"kw": 0.702,
+"n": 12,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|2500-3999|Other Fuel": {
+"kw": 0.884,
+"n": 127,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|<1940|4000+|Electricity": {
+"kw": 3.362,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|4000+|Natural Gas": {
+"kw": 0.709,
+"n": 31,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|4000+|Fuel Oil": {
+"kw": 0.57,
+"n": 70,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|4000+|Propane": {
+"kw": 0.702,
+"n": 12,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|<1940|4000+|Other Fuel": {
+"kw": 0.884,
+"n": 127,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1940s|0-1499|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|0-1499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|0-1499|Fuel Oil": {
+"kw": 0.586,
+"n": 12,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|0-1499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|0-1499|Other Fuel": {
+"kw": 0.717,
+"n": 19,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 2 - 4 Units|1940s|1500-2499|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|1500-2499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|1500-2499|Fuel Oil": {
+"kw": 0.608,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|1500-2499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|1500-2499|Other Fuel": {
+"kw": 0.724,
+"n": 20,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1940s|2500-3999|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|2500-3999|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|2500-3999|Fuel Oil": {
+"kw": 0.608,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|2500-3999|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|2500-3999|Other Fuel": {
+"kw": 0.724,
+"n": 20,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1940s|4000+|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|4000+|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|4000+|Fuel Oil": {
+"kw": 0.608,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|4000+|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1940s|4000+|Other Fuel": {
+"kw": 0.724,
+"n": 20,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1950s|0-1499|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|0-1499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|0-1499|Fuel Oil": {
+"kw": 0.526,
+"n": 14,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|0-1499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|0-1499|Other Fuel": {
+"kw": 0.809,
+"n": 20,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 2 - 4 Units|1950s|1500-2499|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|1500-2499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|1500-2499|Fuel Oil": {
+"kw": 0.694,
+"n": 16,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|1500-2499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|1500-2499|Other Fuel": {
+"kw": 0.906,
+"n": 22,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1950s|2500-3999|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|2500-3999|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|2500-3999|Fuel Oil": {
+"kw": 0.694,
+"n": 16,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|2500-3999|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|2500-3999|Other Fuel": {
+"kw": 0.906,
+"n": 22,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1950s|4000+|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|4000+|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|4000+|Fuel Oil": {
+"kw": 0.694,
+"n": 16,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|4000+|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1950s|4000+|Other Fuel": {
+"kw": 0.906,
+"n": 22,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1960s|0-1499|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|0-1499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|0-1499|Fuel Oil": {
+"kw": 0.554,
+"n": 13,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|0-1499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|0-1499|Other Fuel": {
+"kw": 0.716,
+"n": 17,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 2 - 4 Units|1960s|1500-2499|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|1500-2499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|1500-2499|Fuel Oil": {
+"kw": 0.631,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|1500-2499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|1500-2499|Other Fuel": {
+"kw": 0.76,
+"n": 19,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1960s|2500-3999|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|2500-3999|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|2500-3999|Fuel Oil": {
+"kw": 0.631,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|2500-3999|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|2500-3999|Other Fuel": {
+"kw": 0.76,
+"n": 19,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1960s|4000+|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|4000+|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|4000+|Fuel Oil": {
+"kw": 0.631,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|4000+|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1960s|4000+|Other Fuel": {
+"kw": 0.76,
+"n": 19,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1970s|0-1499|Electricity": {
+"kw": 2.531,
+"n": 11,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|0-1499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|0-1499|Fuel Oil": {
+"kw": 0.55,
+"n": 18,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|0-1499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|0-1499|Other Fuel": {
+"kw": 1.175,
+"n": 34,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 2 - 4 Units|1970s|1500-2499|Electricity": {
+"kw": 2.759,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|1500-2499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|1500-2499|Fuel Oil": {
+"kw": 0.552,
+"n": 19,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|1500-2499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|1500-2499|Other Fuel": {
+"kw": 1.314,
+"n": 38,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1970s|2500-3999|Electricity": {
+"kw": 2.759,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|2500-3999|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|2500-3999|Fuel Oil": {
+"kw": 0.552,
+"n": 19,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|2500-3999|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|2500-3999|Other Fuel": {
+"kw": 1.314,
+"n": 38,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1970s|4000+|Electricity": {
+"kw": 2.759,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|4000+|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|4000+|Fuel Oil": {
+"kw": 0.552,
+"n": 19,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|4000+|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1970s|4000+|Other Fuel": {
+"kw": 1.314,
+"n": 38,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1980s|0-1499|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|0-1499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|0-1499|Fuel Oil": {
+"kw": 0.548,
+"n": 14,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|0-1499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|0-1499|Other Fuel": {
+"kw": 0.996,
+"n": 36,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 2 - 4 Units|1980s|1500-2499|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|1500-2499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|1500-2499|Fuel Oil": {
+"kw": 0.559,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|1500-2499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|1500-2499|Other Fuel": {
+"kw": 0.988,
+"n": 37,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1980s|2500-3999|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|2500-3999|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|2500-3999|Fuel Oil": {
+"kw": 0.559,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|2500-3999|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|2500-3999|Other Fuel": {
+"kw": 0.988,
+"n": 37,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1980s|4000+|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|4000+|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|4000+|Fuel Oil": {
+"kw": 0.559,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|4000+|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1980s|4000+|Other Fuel": {
+"kw": 0.988,
+"n": 37,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1990s|0-1499|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|0-1499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|0-1499|Fuel Oil": {
+"kw": 0.764,
+"n": 13,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|0-1499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|0-1499|Other Fuel": {
+"kw": 0.896,
+"n": 20,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 2 - 4 Units|1990s|1500-2499|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|1500-2499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|1500-2499|Fuel Oil": {
+"kw": 0.764,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|1500-2499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|1500-2499|Other Fuel": {
+"kw": 0.896,
+"n": 20,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1990s|2500-3999|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|2500-3999|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|2500-3999|Fuel Oil": {
+"kw": 0.764,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|2500-3999|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|2500-3999|Other Fuel": {
+"kw": 0.896,
+"n": 20,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|1990s|4000+|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|4000+|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|4000+|Fuel Oil": {
+"kw": 0.764,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|4000+|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|1990s|4000+|Other Fuel": {
+"kw": 0.896,
+"n": 20,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|2000s|0-1499|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|0-1499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|0-1499|Fuel Oil": {
+"kw": 0.55,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|0-1499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|0-1499|Other Fuel": {
+"kw": 0.46,
+"n": 12,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 2 - 4 Units|2000s|1500-2499|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|1500-2499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|1500-2499|Fuel Oil": {
+"kw": 0.55,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|1500-2499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|1500-2499|Other Fuel": {
+"kw": 0.511,
+"n": 14,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|2000s|2500-3999|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|2500-3999|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|2500-3999|Fuel Oil": {
+"kw": 0.55,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|2500-3999|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|2500-3999|Other Fuel": {
+"kw": 0.511,
+"n": 14,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|2000s|4000+|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|4000+|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|4000+|Fuel Oil": {
+"kw": 0.55,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|4000+|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2000s|4000+|Other Fuel": {
+"kw": 0.511,
+"n": 14,
+"level": "type+vintage"
+},
+"Multi-Family with 2 - 4 Units|2010s|0-1499|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|0-1499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|0-1499|Fuel Oil": {
+"kw": 0.602,
+"n": 173,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|0-1499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|0-1499|Other Fuel": {
+"kw": 0.924,
+"n": 303,
+"level": "type"
+},
+"Multi-Family with 2 - 4 Units|2010s|1500-2499|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|1500-2499|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|1500-2499|Fuel Oil": {
+"kw": 0.602,
+"n": 173,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|1500-2499|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|1500-2499|Other Fuel": {
+"kw": 0.924,
+"n": 303,
+"level": "type"
+},
+"Multi-Family with 2 - 4 Units|2010s|2500-3999|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|2500-3999|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|2500-3999|Fuel Oil": {
+"kw": 0.602,
+"n": 173,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|2500-3999|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|2500-3999|Other Fuel": {
+"kw": 0.924,
+"n": 303,
+"level": "type"
+},
+"Multi-Family with 2 - 4 Units|2010s|4000+|Electricity": {
+"kw": 2.718,
+"n": 41,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|4000+|Natural Gas": {
+"kw": 0.623,
+"n": 54,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|4000+|Fuel Oil": {
+"kw": 0.602,
+"n": 173,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|4000+|Propane": {
+"kw": 0.802,
+"n": 32,
+"level": "type+fuel"
+},
+"Multi-Family with 2 - 4 Units|2010s|4000+|Other Fuel": {
+"kw": 0.924,
+"n": 303,
+"level": "type"
+},
+"Multi-Family with 5+ Units|<1940|0-1499|Electricity": {
+"kw": 1.61,
+"n": 15,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 5+ Units|<1940|0-1499|Natural Gas": {
+"kw": 0.387,
+"n": 22,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 5+ Units|<1940|0-1499|Fuel Oil": {
+"kw": 0.491,
+"n": 31,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 5+ Units|<1940|0-1499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|<1940|0-1499|Other Fuel": {
+"kw": 0.693,
+"n": 73,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 5+ Units|<1940|1500-2499|Electricity": {
+"kw": 2.214,
+"n": 17,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|<1940|1500-2499|Natural Gas": {
+"kw": 0.497,
+"n": 24,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|<1940|1500-2499|Fuel Oil": {
+"kw": 0.529,
+"n": 35,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|<1940|1500-2499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|<1940|1500-2499|Other Fuel": {
+"kw": 0.874,
+"n": 81,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|<1940|2500-3999|Electricity": {
+"kw": 2.214,
+"n": 17,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|<1940|2500-3999|Natural Gas": {
+"kw": 0.497,
+"n": 24,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|<1940|2500-3999|Fuel Oil": {
+"kw": 0.529,
+"n": 35,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|<1940|2500-3999|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|<1940|2500-3999|Other Fuel": {
+"kw": 0.874,
+"n": 81,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|<1940|4000+|Electricity": {
+"kw": 2.214,
+"n": 17,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|<1940|4000+|Natural Gas": {
+"kw": 0.497,
+"n": 24,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|<1940|4000+|Fuel Oil": {
+"kw": 0.529,
+"n": 35,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|<1940|4000+|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|<1940|4000+|Other Fuel": {
+"kw": 0.874,
+"n": 81,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1940s|0-1499|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|0-1499|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|0-1499|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|0-1499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|0-1499|Other Fuel": {
+"kw": 0.807,
+"n": 10,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1940s|1500-2499|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|1500-2499|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|1500-2499|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|1500-2499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|1500-2499|Other Fuel": {
+"kw": 0.807,
+"n": 10,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1940s|2500-3999|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|2500-3999|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|2500-3999|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|2500-3999|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|2500-3999|Other Fuel": {
+"kw": 0.807,
+"n": 10,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1940s|4000+|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|4000+|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|4000+|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|4000+|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1940s|4000+|Other Fuel": {
+"kw": 0.807,
+"n": 10,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1950s|0-1499|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|0-1499|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|0-1499|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|0-1499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|0-1499|Other Fuel": {
+"kw": 0.669,
+"n": 12,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 5+ Units|1950s|1500-2499|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|1500-2499|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|1500-2499|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|1500-2499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|1500-2499|Other Fuel": {
+"kw": 0.675,
+"n": 13,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1950s|2500-3999|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|2500-3999|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|2500-3999|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|2500-3999|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|2500-3999|Other Fuel": {
+"kw": 0.675,
+"n": 13,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1950s|4000+|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|4000+|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|4000+|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|4000+|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1950s|4000+|Other Fuel": {
+"kw": 0.675,
+"n": 13,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1960s|0-1499|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|0-1499|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|0-1499|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|0-1499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|0-1499|Other Fuel": {
+"kw": 0.522,
+"n": 11,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 5+ Units|1960s|1500-2499|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|1500-2499|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|1500-2499|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|1500-2499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|1500-2499|Other Fuel": {
+"kw": 0.522,
+"n": 11,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1960s|2500-3999|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|2500-3999|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|2500-3999|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|2500-3999|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|2500-3999|Other Fuel": {
+"kw": 0.522,
+"n": 11,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1960s|4000+|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|4000+|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|4000+|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|4000+|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1960s|4000+|Other Fuel": {
+"kw": 0.522,
+"n": 11,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1970s|0-1499|Electricity": {
+"kw": 1.64,
+"n": 15,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 5+ Units|1970s|0-1499|Natural Gas": {
+"kw": 0.478,
+"n": 13,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 5+ Units|1970s|0-1499|Fuel Oil": {
+"kw": 0.567,
+"n": 12,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 5+ Units|1970s|0-1499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1970s|0-1499|Other Fuel": {
+"kw": 0.919,
+"n": 42,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 5+ Units|1970s|1500-2499|Electricity": {
+"kw": 1.64,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1970s|1500-2499|Natural Gas": {
+"kw": 0.478,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1970s|1500-2499|Fuel Oil": {
+"kw": 0.567,
+"n": 12,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1970s|1500-2499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1970s|1500-2499|Other Fuel": {
+"kw": 0.919,
+"n": 42,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1970s|2500-3999|Electricity": {
+"kw": 1.64,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1970s|2500-3999|Natural Gas": {
+"kw": 0.478,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1970s|2500-3999|Fuel Oil": {
+"kw": 0.567,
+"n": 12,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1970s|2500-3999|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1970s|2500-3999|Other Fuel": {
+"kw": 0.919,
+"n": 42,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1970s|4000+|Electricity": {
+"kw": 1.64,
+"n": 15,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1970s|4000+|Natural Gas": {
+"kw": 0.478,
+"n": 13,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1970s|4000+|Fuel Oil": {
+"kw": 0.567,
+"n": 12,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1970s|4000+|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1970s|4000+|Other Fuel": {
+"kw": 0.919,
+"n": 42,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1980s|0-1499|Electricity": {
+"kw": 1.315,
+"n": 19,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 5+ Units|1980s|0-1499|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1980s|0-1499|Fuel Oil": {
+"kw": 0.563,
+"n": 17,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 5+ Units|1980s|0-1499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1980s|0-1499|Other Fuel": {
+"kw": 0.839,
+"n": 47,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 5+ Units|1980s|1500-2499|Electricity": {
+"kw": 1.69,
+"n": 24,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1980s|1500-2499|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1980s|1500-2499|Fuel Oil": {
+"kw": 0.564,
+"n": 20,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1980s|1500-2499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1980s|1500-2499|Other Fuel": {
+"kw": 1.031,
+"n": 55,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1980s|2500-3999|Electricity": {
+"kw": 1.69,
+"n": 24,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1980s|2500-3999|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1980s|2500-3999|Fuel Oil": {
+"kw": 0.564,
+"n": 20,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1980s|2500-3999|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1980s|2500-3999|Other Fuel": {
+"kw": 1.031,
+"n": 55,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1980s|4000+|Electricity": {
+"kw": 1.69,
+"n": 24,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1980s|4000+|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1980s|4000+|Fuel Oil": {
+"kw": 0.564,
+"n": 20,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1980s|4000+|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1980s|4000+|Other Fuel": {
+"kw": 1.031,
+"n": 55,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1990s|0-1499|Electricity": {
+"kw": 1.369,
+"n": 10,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1990s|0-1499|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1990s|0-1499|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1990s|0-1499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1990s|0-1499|Other Fuel": {
+"kw": 0.968,
+"n": 17,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 5+ Units|1990s|1500-2499|Electricity": {
+"kw": 1.369,
+"n": 10,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1990s|1500-2499|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1990s|1500-2499|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1990s|1500-2499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1990s|1500-2499|Other Fuel": {
+"kw": 0.945,
+"n": 21,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1990s|2500-3999|Electricity": {
+"kw": 1.369,
+"n": 10,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1990s|2500-3999|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1990s|2500-3999|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1990s|2500-3999|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1990s|2500-3999|Other Fuel": {
+"kw": 0.945,
+"n": 21,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|1990s|4000+|Electricity": {
+"kw": 1.369,
+"n": 10,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|1990s|4000+|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1990s|4000+|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1990s|4000+|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|1990s|4000+|Other Fuel": {
+"kw": 0.945,
+"n": 21,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|2000s|0-1499|Electricity": {
+"kw": 1.116,
+"n": 11,
+"level": "type+vintage+sqft+fuel"
+},
+"Multi-Family with 5+ Units|2000s|0-1499|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2000s|0-1499|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2000s|0-1499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2000s|0-1499|Other Fuel": {
+"kw": 0.845,
+"n": 27,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 5+ Units|2000s|1500-2499|Electricity": {
+"kw": 1.116,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|2000s|1500-2499|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2000s|1500-2499|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2000s|1500-2499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2000s|1500-2499|Other Fuel": {
+"kw": 0.845,
+"n": 27,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|2000s|2500-3999|Electricity": {
+"kw": 1.116,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|2000s|2500-3999|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2000s|2500-3999|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2000s|2500-3999|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2000s|2500-3999|Other Fuel": {
+"kw": 0.845,
+"n": 27,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|2000s|4000+|Electricity": {
+"kw": 1.116,
+"n": 11,
+"level": "type+vintage+fuel"
+},
+"Multi-Family with 5+ Units|2000s|4000+|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2000s|4000+|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2000s|4000+|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2000s|4000+|Other Fuel": {
+"kw": 0.845,
+"n": 27,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|2010s|0-1499|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|0-1499|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|0-1499|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|0-1499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|0-1499|Other Fuel": {
+"kw": 0.91,
+"n": 11,
+"level": "type+vintage+sqft"
+},
+"Multi-Family with 5+ Units|2010s|1500-2499|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|1500-2499|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|1500-2499|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|1500-2499|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|1500-2499|Other Fuel": {
+"kw": 0.91,
+"n": 11,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|2010s|2500-3999|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|2500-3999|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|2500-3999|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|2500-3999|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|2500-3999|Other Fuel": {
+"kw": 0.91,
+"n": 11,
+"level": "type+vintage"
+},
+"Multi-Family with 5+ Units|2010s|4000+|Electricity": {
+"kw": 1.61,
+"n": 87,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|4000+|Natural Gas": {
+"kw": 0.512,
+"n": 65,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|4000+|Fuel Oil": {
+"kw": 0.575,
+"n": 101,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|4000+|Propane": {
+"kw": 0.571,
+"n": 15,
+"level": "type+fuel"
+},
+"Multi-Family with 5+ Units|2010s|4000+|Other Fuel": {
+"kw": 0.91,
+"n": 11,
+"level": "type+vintage"
+}
+}
+}
