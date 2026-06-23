@@ -1,3 +1,4 @@
+import { lookupHomePeakLoad } from './loadProfile';
 import type { InputParams, VppVendor } from './types';
 
 /**
@@ -74,8 +75,15 @@ export const DEFAULTS: InputParams = {
   // published terms (see VPP_VENDORS). Currently both resolve to the prior
   // Tesla-based figures; adding vendors shifts these automatically.
   avgVppDischarge: VPP_VENDOR_AVERAGES.avgVppDischarge,
-  homePeakLoad: 3.6,
   degradationPct: 1.5,
+  // Default home: an electric-heat 1980s ~1,800 sqft single-family detached.
+  // Its NREL-derived 5–9 PM load (~3.6 kW) preserves the documented Year-1
+  // regression (effDischarge stays capped at the 3.6 kW VPP discharge).
+  homeType: 'Single-Family Detached',
+  yearBuilt: 1985,
+  sqft: 1800,
+  heatingFuel: 'Electricity',
+  homePeakLoad: lookupHomePeakLoad('Single-Family Detached', 1985, 1800, 'Electricity'),
   vppEvents: VPP_VENDOR_AVERAGES.vppEvents,
   passThrough: VPP_VENDOR_AVERAGES.passThrough,
   weekdays: 250,

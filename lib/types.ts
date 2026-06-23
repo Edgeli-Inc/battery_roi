@@ -1,5 +1,20 @@
 export type Scenario = 'vpp' | 'tou' | 'hybrid';
 
+/** Home characteristics — drive the NREL-derived 5–9 PM electric load. */
+export type HomeType =
+  | 'Single-Family Detached'
+  | 'Single-Family Attached'
+  | 'Mobile Home'
+  | 'Multi-Family with 2 - 4 Units'
+  | 'Multi-Family with 5+ Units';
+
+export type HeatingFuel =
+  | 'Electricity'
+  | 'Natural Gas'
+  | 'Fuel Oil'
+  | 'Propane'
+  | 'Other Fuel';
+
 /**
  * A VPP vendor on the Efficiency Maine (EMT) approved list.
  * Fields are `null` when the vendor publishes no value — null fields are
@@ -21,8 +36,16 @@ export interface InputParams {
 
   // Battery
   avgVppDischarge: number; // kW — average during VPP events
-  homePeakLoad: number; // kW — home load served during 5-9 PM
   degradationPct: number; // annual %, e.g. 1.5
+
+  // Home energy consumption — drive the NREL-derived 5–9 PM electric load.
+  homeType: HomeType;
+  yearBuilt: number;
+  sqft: number;
+  heatingFuel: HeatingFuel;
+  // kW home load served during 5-9 PM. DERIVED from the four fields above via
+  // the NREL ResStock lookup (see lib/loadProfile.ts) — not set directly.
+  homePeakLoad: number;
 
   // Program
   vppEvents: number; // events per year, e.g. 40
