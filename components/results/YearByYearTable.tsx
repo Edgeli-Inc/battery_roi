@@ -1,12 +1,33 @@
 'use client';
 
 import { useState } from 'react';
+import InfoTip from '@/components/ui/InfoTip';
 import { fmtUSD, fmtUSDSigned } from '@/lib/format';
 import type { RoiSummary } from '@/lib/types';
 
 interface Props {
   summary: RoiSummary;
 }
+
+const COLUMNS: { label: string; info: string }[] = [
+  {
+    label: 'VPP',
+    info: 'VPP cash that year (×0 after year 10), scaled down by battery degradation.',
+  },
+  {
+    label: 'TOU',
+    info: 'TOU arbitrage savings that year, after degradation and compounding rate escalation.',
+  },
+  { label: 'Total', info: 'VPP plus TOU value earned in that single year.' },
+  {
+    label: 'Cum. gross',
+    info: 'Running sum of all value earned to date, before subtracting install cost.',
+  },
+  {
+    label: 'Net position',
+    info: 'Cumulative gross minus net install cost. Turns positive at payback.',
+  },
+];
 
 export default function YearByYearTable({ summary }: Props) {
   const [open, setOpen] = useState(false);
@@ -27,11 +48,14 @@ export default function YearByYearTable({ summary }: Props) {
             <thead>
               <tr className="border-b border-slate-200 text-xs uppercase tracking-wide text-slate-500">
                 <th className="py-2 text-left font-medium">Year</th>
-                <th className="py-2 font-medium">VPP</th>
-                <th className="py-2 font-medium">TOU</th>
-                <th className="py-2 font-medium">Total</th>
-                <th className="py-2 font-medium">Cum. gross</th>
-                <th className="py-2 font-medium">Net position</th>
+                {COLUMNS.map((c) => (
+                  <th key={c.label} className="py-2 font-medium">
+                    <span className="inline-flex items-center justify-end gap-1">
+                      {c.label}
+                      <InfoTip label={c.label} text={c.info} />
+                    </span>
+                  </th>
+                ))}
               </tr>
             </thead>
             <tbody>

@@ -1,5 +1,6 @@
 'use client';
 
+import InfoTip from '@/components/ui/InfoTip';
 import { MODEL } from '@/lib/constants';
 import type { RoiSummary } from '@/lib/types';
 
@@ -24,7 +25,13 @@ export default function PaybackBar({ summary }: Props) {
   return (
     <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
       <div className="mb-2 flex items-baseline justify-between">
-        <h3 className="text-sm font-semibold text-slate-700">Payback timeline</h3>
+        <h3 className="flex items-center gap-1.5 text-sm font-semibold text-slate-700">
+          Payback timeline
+          <InfoTip
+            label="Payback timeline"
+            text="The year cumulative value first exceeds net install cost. Green ≤8 yrs (strong), amber 9–12 (moderate), red >12 or never (weak)."
+          />
+        </h3>
         <span className={`text-sm font-semibold ${t.text}`}>
           {paybackYear ? `Year ${paybackYear} · ${t.label}` : t.label}
         </span>

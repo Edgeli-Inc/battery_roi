@@ -8,7 +8,6 @@ import RateInputs from '@/components/inputs/RateInputs';
 import Disclaimers from '@/components/layout/Disclaimers';
 import RateRiskCallout from '@/components/layout/RateRiskCallout';
 import ScenarioTabs from '@/components/layout/ScenarioTabs';
-import CumulativeChart from '@/components/results/CumulativeChart';
 import MetricCards from '@/components/results/MetricCards';
 import PaybackBar from '@/components/results/PaybackBar';
 import YearByYearTable from '@/components/results/YearByYearTable';
@@ -64,7 +63,6 @@ export default function Home() {
         <div className="space-y-4">
           <MetricCards summary={summary} breakdown={breakdown} />
           <PaybackBar summary={summary} />
-          <CumulativeChart summary={summary} />
           <YearByYearTable summary={summary} />
           <RateRiskCallout />
         </div>
